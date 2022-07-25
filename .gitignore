@@ -1,3 +1,5 @@
 dist/*.json
 
+~*.xlsx
+
 node_modules/
