@@ -6,14 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gl:carList":"node .\\exportJsonLines.js .\\国际服小助手.xlsx 数据卡片",
-    "gl:versionNoteGL":"node .\\exportJsonLines.js .\\国际服小助手.xlsx versionNoteGL",
-    "gl:careerSeasonGL":"node .\\exportJsonLines.js .\\生涯地图.xlsx careerSeasonGL",
+    "gl:versionNote":"node .\\exportJsonLines.js .\\国际服小助手.xlsx versionNoteGL",
+    "gl:careerSeason":"node .\\exportJsonLines.js .\\生涯地图.xlsx careerSeasonGL",
     
     "al:carList":"node .\\exportJsonLines.js .\\国服小助手.xlsx 数据卡片",
-    "al:versionNoteAL":"node .\\exportJsonLines.js .\\国服小助手.xlsx versionNoteAL",
-    "al:careerSeasonAL":"node .\\exportJsonLines.js .\\生涯地图.xlsx careerSeasonAL",
+    "al:versionNote":"node .\\exportJsonLines.js .\\国服小助手.xlsx versionNoteAL",
+    "al:careerSeason":"node .\\exportJsonLines.js .\\生涯地图.xlsx careerSeasonAL",
 
-    "tracks":"node .\\exportJsonLines.js .\\生涯地图精简.xlsx track"
+    "tracks":"node .\\exportJsonLines.js .\\生涯地图.xlsx track",
+    "mapTheme":"node .\\exportJsonLines.js .\\生涯地图.xlsx mapTheme"
   },
   "author": "",
   "license": "ISC",
