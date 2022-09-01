@@ -3,3 +3,5 @@ dist/*.json
 ~*.xlsx
 
 node_modules/
+
+企业信息*.xlsx
