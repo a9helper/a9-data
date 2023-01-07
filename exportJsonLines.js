@@ -24,7 +24,7 @@ const useHandle = (obj, handle) => {
 
 const exportJsonLines = (xlsxFilePath, sheetName) => {
   const table = xlsx.readFile(xlsxFilePath)
-  const dataPath = `dist\\${xlsxFilePath}.${sheetName}.line.json`
+  const dataPath = `dist/${xlsxFilePath}.${sheetName}.line.json`
   const dataJson = xlsx.utils.sheet_to_json(table.Sheets[sheetName])
   // console.log(table.Sheets[sheetName]["!merges"])
   const dataLines = dataJson
