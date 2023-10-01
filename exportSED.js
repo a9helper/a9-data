@@ -34,14 +34,14 @@ const useHandle = (obj, handle) => {
 
 const exportJsonLines = (xlsxFilePath, sheetName) => {
   const table = xlsx.readFile(xlsxFilePath)
-  const dataPath = `dist\\${xlsxFilePath}.${sheetName}.line.json`
+  const dataPath = `dist\\${xlsxFilePath}.${sheetName}.sed.json`
   const dataJson = xlsx.utils.sheet_to_json(table.Sheets[sheetName])
   // console.log(table.Sheets[sheetName]["!merges"])
   const dataLines = dataJson.map((obj) => ({
     car_id: obj.car_id,
     fullName: obj.fullName,
     nickName: obj.nickName,
-    isKeyCar: !!obj.keyCar,
+    isKeyCar: obj.star_1==='🔑',
     rankLimits: [],
     star: obj.star,
   }))
