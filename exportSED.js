@@ -2,11 +2,10 @@ const xlsx = require('xlsx')
 const fs = require('fs')
 const dayjs = require('dayjs')
 
-const dayFromExcel=(value) =>
-dayjs('1900-01-01')
-  .add(value + 2 * 365, 'day')
-  .format('YYYY-MM-DD')
-
+const dayFromExcel = (value) =>
+  dayjs('1900-01-01')
+    .add(value + 2 * 365, 'day')
+    .format('YYYY-MM-DD')
 
 const handle = {
   topSpeed: (value) => Number(Number(value).toFixed(1)),
@@ -38,10 +37,10 @@ const exportJsonLines = (xlsxFilePath, sheetName) => {
   const dataJson = xlsx.utils.sheet_to_json(table.Sheets[sheetName])
   // console.log(table.Sheets[sheetName]["!merges"])
   const dataLines = dataJson.map((obj) => ({
-    car_id: obj.car_id,
+    car_id: obj.car_id + '',
     fullName: obj.fullName,
-    nickName: obj.nickName,
-    isKeyCar: obj.star_1==='🔑',
+    nickName: obj.nickName + '',
+    isKeyCar: obj.star_1 === '🔑',
     rankLimits: [],
     star: obj.star,
   }))
