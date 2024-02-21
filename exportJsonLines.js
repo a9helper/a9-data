@@ -1,6 +1,8 @@
 const xlsx = require('xlsx')
 const fs = require('fs')
 
+const toFixed = (value, num) => Number(Number(value).toFixed(num))
+
 const handle = {
   topSpeed: (value) => Number(Number(value).toFixed(1)),
   acceleration: (value) => Number(Number(value).toFixed(2)),
@@ -8,6 +10,10 @@ const handle = {
   nitro: (value) => Number(Number(value).toFixed(2)),
   nitroDuration: (value) => Number(Number(value).toFixed(2)),
   car_id: (value) => '' + value,
+  overTopSpeed: (value) => Number(Number(value).toFixed(1)),
+  overAcceleration: (value) => Number(Number(value).toFixed(2)),
+  overHandling: (value) => Number(Number(value).toFixed(2)),
+  overNitro: (value) => Number(Number(value).toFixed(2)),
 }
 
 const copy = (obj) => JSON.parse(JSON.stringify(obj))
