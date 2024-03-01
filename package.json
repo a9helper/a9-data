@@ -12,7 +12,9 @@
     "al:versionNote": "node exportJsonLines.js 国服小助手.xlsx versionNoteAL",
     "al:careerSeason": "node exportJsonLines.js 生涯地图.xlsx careerSeasonAL",
     "tracks": "node exportJsonLines.js 生涯地图.xlsx track",
-    "mapTheme": "node exportJsonLines.js 生涯地图.xlsx mapTheme"
+    "mapTheme": "node exportJsonLines.js 生涯地图.xlsx mapTheme",
+    "al:sed": "node exportSED.js 国服小助手.xlsx 数据卡片",
+    "gl:sed": "node exportSED.js 国际服小助手.xlsx 数据卡片"
   },
   "author": "",
   "license": "ISC",
