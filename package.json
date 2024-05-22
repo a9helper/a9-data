@@ -14,7 +14,9 @@
     "tracks": "node exportJsonLines.js 生涯地图.xlsx track",
     "mapTheme": "node exportJsonLines.js 生涯地图.xlsx mapTheme",
     "al:sed": "node exportSED.js 国服小助手.xlsx 数据卡片",
-    "gl:sed": "node exportSED.js 国际服小助手.xlsx 数据卡片"
+    "gl:sed": "node exportSED.js 国际服小助手.xlsx 数据卡片",
+    "gl:carListUnite": "node exportUnite.js 国际服小助手.xlsx 数据卡片 gl",
+    "al:carListUnite": "node exportUnite.js 国服小助手.xlsx 数据卡片 al"
   },
   "author": "",
   "license": "ISC",
