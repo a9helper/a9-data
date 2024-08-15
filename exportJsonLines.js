@@ -4,6 +4,7 @@ const fs = require('fs')
 const toFixed = (value, num) => Number(Number(value).toFixed(num))
 
 const handle = {
+  rank: (value) => Number(value),
   topSpeed: (value) => Number(Number(value).toFixed(1)),
   acceleration: (value) => Number(Number(value).toFixed(2)),
   handling: (value) => Number(Number(value).toFixed(2)),
