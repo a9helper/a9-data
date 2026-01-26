@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gl:carList": "node exportJsonLines.js 国际服小助手.xlsx 数据卡片",
-    "gl:versionNote": "node exportJsonLines.js 国际服小助手.xlsx versionNoteGL",
-    "gl:careerSeason": "node exportJsonLines.js 生涯地图.xlsx careerSeasonGL",
+    "alu:carList": "node exportJsonLines.js ALU小助手.xlsx 数据卡片",
+    "alu:versionNote": "node exportJsonLines.js ALU小助手.xlsx versionNoteGL",
+    "alu:sed": "node exportSED.js ALU小助手.xlsx 数据卡片",
+    "alu:carListUnite": "node exportUnite.js ALU小助手.xlsx 数据卡片 gl",
     "al:carList": "node exportJsonLines.js 国服小助手.xlsx 数据卡片",
     "al:versionNote": "node exportJsonLines.js 国服小助手.xlsx versionNoteAL",
     "al:careerSeason": "node exportJsonLines.js 生涯地图.xlsx careerSeasonAL",
@@ -17,10 +17,9 @@
     "gl:sed": "node exportSED.js 国际服小助手.xlsx 数据卡片",
     "gl:carListUnite": "node exportUnite.js 国际服小助手.xlsx 数据卡片 gl",
     "al:carListUnite": "node exportUnite.js 国服小助手.xlsx 数据卡片 al",
-    "alu:carList": "node exportJsonLines.js ALU小助手.xlsx 数据卡片",
-    "alu:versionNote": "node exportJsonLines.js ALU小助手.xlsx versionNoteGL",
-    "alu:sed": "node exportSED.js ALU小助手.xlsx 数据卡片",
-    "alu:carListUnite": "node exportUnite.js ALU小助手.xlsx 数据卡片 gl"
+    "gl:carList": "node exportJsonLines.js 国际服小助手.xlsx 数据卡片",
+    "gl:versionNote": "node exportJsonLines.js 国际服小助手.xlsx versionNoteGL",
+    "gl:careerSeason": "node exportJsonLines.js 生涯地图.xlsx careerSeasonGL"
   },
   "author": "",
   "license": "ISC",
