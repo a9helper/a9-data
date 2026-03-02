@@ -5,3 +5,5 @@ dist/*.json
 node_modules/
 
 企业信息*.xlsx
+
+**/.DS_Store
